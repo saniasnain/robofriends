@@ -1,10 +1,10 @@
-import SearchBox from './SearchBox';
+import SearchBox from '../components/SearchBox';
 import React, {Component} from 'react';
-import CardList from './CardList';
-import Scroll from './Scroll'
-import ErrorBoundary from './ErrorBoundary';
+import CardList from '../components/CardList';
+import Scroll from '../components/Scroll'
+//import ErrorBoundary from '../components/ErrorBoundary';
 import './App.css'
-import './index.css'
+//import './index.css'
 
 class App extends Component{
     constructor(){
@@ -33,10 +33,10 @@ class App extends Component{
                 <h1>RoboFriends</h1>
                 <SearchBox searchChange = {this.OnSearchChange}/>
                 <Scroll>
-                    <ErrorBoundary>
+
                         <CardList robots={filteredRobots}/>
-                    </ErrorBoundary>
-                </Scroll>
+
+               </Scroll>
                 
                 
             </div>
